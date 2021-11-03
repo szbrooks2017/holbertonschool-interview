@@ -18,7 +18,7 @@ def canUnlockAll(boxes):
     # iterate through the list of lists
     # if total boxes or items in boxes are empty return false
     # append to new list
-    # if new list
+    # if there is a match then return true
 
     match = []
     totalBoxes = len(boxes)
