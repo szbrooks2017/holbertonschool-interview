@@ -20,16 +20,21 @@ def canUnlockAll(boxes):
     # append to new list
     # if there is a match then return true
 
-    match = []
+    match = [0]
     totalBoxes = len(boxes)
 
-    for keys in boxes:
-        if len(keys) == 0 and keys is not boxes[totalBoxes - 1]:
-            return False
-        for item in keys:
-            match.append(item)
-    for index in enumerate(boxes):
-        if index in match or index < totalBoxes - 1:
-            return True
-        else:
-            return False
+    if len(boxes) == 0:
+        return True
+
+    for item in match:
+        for key in boxes[item]:
+            if key not in match and key < totalBoxes:
+                match.append(key)
+            print(match)
+    return len(match) == totalBoxes
+    # for index in enumerate(match):
+    #     print(index)
+    #     if index in match:
+    #         return True
+    #     else:
+    #         return False
