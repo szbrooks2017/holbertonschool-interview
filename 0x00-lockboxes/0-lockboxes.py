@@ -23,9 +23,6 @@ def canUnlockAll(boxes):
     match = []
     totalBoxes = len(boxes)
 
-    if boxes == None:
-        return True
-
     for keys in boxes:
         if len(keys) == 0 and keys is not boxes[totalBoxes - 1]:
             return False
