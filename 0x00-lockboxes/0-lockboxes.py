@@ -30,7 +30,6 @@ def canUnlockAll(boxes):
         for key in boxes[item]:
             if key not in match and key < totalBoxes:
                 match.append(key)
-            print(match)
     return len(match) == totalBoxes
     # for index in enumerate(match):
     #     print(index)
