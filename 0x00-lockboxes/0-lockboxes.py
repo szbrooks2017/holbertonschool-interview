@@ -23,7 +23,7 @@ def canUnlockAll(boxes):
     match = [0]
     totalBoxes = len(boxes)
 
-    if len(boxes) == 0:
+    if totalBoxes == 0:
         return True
 
     for item in match:
