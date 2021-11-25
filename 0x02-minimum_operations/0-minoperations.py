@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+function that returns an integer
+if n is impossible return 0
+"""
 
 
 def minOperations(n):
