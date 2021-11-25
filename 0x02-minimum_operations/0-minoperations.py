@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
+
 def minOperations(n):
+    """ function that finds the min ops"""
 
     i = 2
     result = 0
