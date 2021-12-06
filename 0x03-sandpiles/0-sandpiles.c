@@ -29,7 +29,7 @@ int add_sandpile_matrix(int grid1[3][3], int grid2[3][3])
 {
 	int i = 0;
 	int j = 0;
-	int isUnstable = 0;
+	int stable = 0;
 
 	for (i = 0; i < 3; i++)
 	{
@@ -39,11 +39,11 @@ int add_sandpile_matrix(int grid1[3][3], int grid2[3][3])
 			grid2[i][j] = 0;
 
 			if (grid1[i][j] > 3)
-				isUnstable = 1;
+				stable = 1;
 		}
 	}
 
-	return (isUnstable == 0 ? 0 : 1);
+	return (stable == 0 ? 0 : 1);
 }
 /**
  * topple - function that topples a sandpile
@@ -89,13 +89,13 @@ void topple(int grid1[3][3], int grid2[3][3])
  */
 void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 {
-	int isUnstable = 0;
+	int stable = 0;
 
-	isUnstable = add_sandpile_matrix(grid1, grid2);
-	while (isUnstable != 0)
+	stable = add_sandpile_matrix(grid1, grid2);
+	while (stable != 0)
 	{
 		topple(grid1, grid2);
-		isUnstable = add_sandpile_matrix(grid1, grid2);
+		stable = add_sandpile_matrix(grid1, grid2);
 	}
 
 }
