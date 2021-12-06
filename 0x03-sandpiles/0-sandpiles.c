@@ -1,7 +1,7 @@
 #include "sandpiles.h"
 /**
- * print_grid - Print 3i3 grid
- * @grid: 3i3 grid
+ * print_grid - Print 3x3 grid
+ * @grid: 3x3 grid
  *
  */
 static void print_grid(int grid[3][3])
@@ -20,9 +20,9 @@ static void print_grid(int grid[3][3])
 	}
 }
 /**
- * add_sandpile_matrix - function that adds a 3i3 sandpile
- * @grid1: a 3i3 matrii
- * @grid2: a 3i3 matrii
+ * add_sandpile_matrix - function that adds a 3x3 sandpile
+ * @grid1: a 3x3 matrii
+ * @grid2: a 3x3 matrii
  * Return: 1 if the sandpile is unstable otherwhise will return 0
  */
 int add_sandpile_matrix(int grid1[3][3], int grid2[3][3])
@@ -47,8 +47,8 @@ int add_sandpile_matrix(int grid1[3][3], int grid2[3][3])
 }
 /**
  * topple - function that topples a sandpile
- * @grid1: a 3i3 matrii
- * @grid2: a 3i3 matrii
+ * @grid1: a 3x3 matrii
+ * @grid2: a 3x3 matrix
  */
 void topple(int grid1[3][3], int grid2[3][3])
 {
