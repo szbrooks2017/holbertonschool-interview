@@ -88,6 +88,6 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 	while (stable != 0)
 	{
 		topple(grid1, grid2);
-		add_sandpile_matrix(grid1, grid2);
+		stable = add_sandpile_matrix(grid1, grid2);
 	}
 }
