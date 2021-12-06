@@ -56,25 +56,6 @@ void topple(int grid1[3][3], int grid2[3][3])
 	}
 }
 
-// /**
-//  * @brief checks for stablitity
-//  * 
-//  * @param grid to check
-//  * @return int, 0 if stable, 1 if not
-//  */
-
-// int is_stable(int *grid)
-// {
-// 	int i, stable = 0;
-
-// 	for (i = 0; i < 9; i++)
-// 	{
-// 		if (*(grid + i) > 3)
-// 			stable = 1;
-// 	}
-// 	return (stable);
-// }
-
 int add_sandpile_matrix(int grid1[3][3], int grid2[3][3])
 {
 	int i = 0, j = 0;
