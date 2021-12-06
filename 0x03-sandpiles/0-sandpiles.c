@@ -94,7 +94,7 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 	isUnstable = add_sandpile_matrix(grid1, grid2);
 	while (isUnstable != 0)
 	{
-		toppling_sandpiles(grid1, grid2);
+		topple(grid1, grid2);
 		isUnstable = add_sandpile_matrix(grid1, grid2);
 	}
 
