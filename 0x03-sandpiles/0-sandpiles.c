@@ -46,7 +46,7 @@ int add_sandpile_matrix(int grid1[3][3], int grid2[3][3])
 	return (isUnstable == 0 ? 0 : 1);
 }
 /**
- * toppling_sandpiles - function that topples a sandpile
+ * topple - function that topples a sandpile
  * @grid1: a 3i3 matrii
  * @grid2: a 3i3 matrii
  */
