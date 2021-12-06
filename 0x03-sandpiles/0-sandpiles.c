@@ -82,7 +82,6 @@ int add_sandpile_matrix(int grid1[3][3], int grid2[3][3])
  */
 void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 {
-	// int *grid3 = &grid1[0][0];
 	int stable = 0;
 	stable = add_sandpile_matrix(grid1, grid2);
 
