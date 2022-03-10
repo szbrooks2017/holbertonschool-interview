@@ -5,8 +5,6 @@
 def rain(walls):
     """rain function"""
 
-    water = 0
-
     if len(walls) == 0:
         return 0
     left, right = 0, len(walls) - 1
