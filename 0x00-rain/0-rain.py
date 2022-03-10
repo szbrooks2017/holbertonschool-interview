@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """0-rain"""
 
+
 def rain(walls):
     """rain function"""
+
     water = 0
 
     if len(walls) == 0:
