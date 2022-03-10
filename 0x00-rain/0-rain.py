@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""
+rain - is a function that returns the number of pools of rain collected
+"""
 def rain(walls):
     water = 0
     if len(walls) == 0:
