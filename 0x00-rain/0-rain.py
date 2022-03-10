@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """ This module counts collected rain water """
 
