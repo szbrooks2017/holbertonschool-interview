@@ -1,25 +1,29 @@
+
 #!/usr/bin/python3
-"""0-rain"""
+""" This module counts collected rain water """
 
 
 def rain(walls):
-    """rain function"""
+    """
+        rain - function to perform the count
+        @walls - incoming list of walls to retain water
+        Return - returns the amount of rainwater, 0 if list doesn't exist
+    """
 
-    water = 0
-
-    if len(walls) == 0:
+    if not walls:
         return 0
-    left, right = 0, len(walls) - 1
-    leftMax, rightMax = walls[left], walls[right]
-    water = 0
 
-    while left < right:
-        if leftMax < rightMax:
-            left += 1
-            leftMax = max(leftMax, walls[left])
-            water += leftMax - walls[left]
-        else:
-            right -= 1
-            rightMax = max(rightMax, walls[right])
-            water += rightMax - walls[right]
-    return water
+    raincount = 0
+
+    for i in range(0, len(walls)):
+        if walls[i] != 0:
+            for j in range(i + 1, len(walls)):
+                if walls[j] != 0:
+                    if walls[i] <= walls[j]:
+                        height = walls[i]
+                    else:
+                        height = walls[j]
+                    raincount += ((j - i) - 1) * height
+                    break
+
+    return raincount
