@@ -1,8 +1,6 @@
 #!/usr/bin/python3
+"""0-rain"""
 
-"""
-rain - is a function that returns the number of pools of rain collected
-"""
 def rain(walls):
     """rain function"""
     water = 0
