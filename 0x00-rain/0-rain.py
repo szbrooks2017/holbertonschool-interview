@@ -8,7 +8,9 @@ def rain(walls):
         @walls - incoming list of walls to retain water
         Return - returns the amount of rainwater, 0 if list doesn't exist
     """
-
+    
+    if len(walls) == 0:
+        return 0
     if not walls:
         return 0
 
