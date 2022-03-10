@@ -5,6 +5,8 @@ rain - is a function that returns the number of pools of rain collected
 """
 def rain(walls):
     water = 0
+    if type(walls) is not list:
+        return 0
     if len(walls) == 0:
         return 0
     left, right = 0, len(walls) - 1
