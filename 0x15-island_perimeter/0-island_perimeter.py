@@ -3,6 +3,7 @@
 
 
 def island_perimeter(grid):
+    """ find the island perimeter """
 
     land = 0
 
